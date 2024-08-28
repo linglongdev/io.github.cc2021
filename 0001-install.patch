@@ -1,0 +1,29 @@
+From c8fee58de2c146fdb26f2b9fac3a49c66ea56edf Mon Sep 17 00:00:00 2001
+From: wjyrich <1071633242@qq.com>
+Date: Fri, 16 Aug 2024 16:40:51 +0800
+Subject: [PATCH] install
+
+---
+ CC2021.pro | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/CC2021.pro b/CC2021.pro
+index 1f22a92..d9e59c0 100644
+--- a/CC2021.pro
++++ b/CC2021.pro
+@@ -67,9 +67,9 @@ macx* {
+ }
+ 
+ linux:!android {
+-    target.path = /usr/bin
+-    icon.path = /usr/share/pixmaps
+-    desktop.path = /usr/share/applications
++    target.path = $$PREFIX/bin
++    icon.path = $$PREFIX/share/pixmaps
++    desktop.path = $$PREFIX/share/applications
+     icon.files += deploy/linux/*.svg
+     desktop.files += deploy/linux/*.desktop
+ 
+-- 
+2.43.4
+
